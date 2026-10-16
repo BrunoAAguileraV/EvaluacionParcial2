@@ -1,6 +1,6 @@
 # Portafolio Web Front-End
 
-Aplicación web desarrollada como portafolio personal en formato de página única (Single Page Application - SPA). El proyecto está construido con React y Vite, utilizando la biblioteca de componentes Ant Design. La arquitectura del código sigue la metodología Atomic Design para la modularización de componentes, implementa hooks para la gestión de estados y eventos de ciclo de vida, y respeta estándares de código limpio (Clean Code).
+Aplicación web desarrollada como portafolio personal en formato de página única. El proyecto está construido con React y Vite, utilizando la biblioteca de componentes Ant Design. La arquitectura del código sigue la metodología Atomic Design para la modularización de componentes, implementa hooks para la gestión de estados y eventos de ciclo de vida.
 
 ---
 
