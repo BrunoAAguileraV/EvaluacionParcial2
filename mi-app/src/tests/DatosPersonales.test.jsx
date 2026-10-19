@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import DatosPersonales from './DatosPersonales.jsx';
+import DatosPersonales from '../components/organisms/DatosPersonales.jsx';
 
 describe('Organismo DatosPersonales (Quién soy)', () => {
     const perfilMock = {

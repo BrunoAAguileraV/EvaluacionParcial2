@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import useFormularioContacto from './useFormularioContacto.js';
+import useFormularioContacto from '../hooks/useFormularioContacto.js';
 
 describe('Hook personalizado useFormularioContacto', () => {
     it('debe inicializar el estado enviando en false', () => {

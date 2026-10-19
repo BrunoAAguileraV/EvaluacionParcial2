@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import TituloSeccion from './TituloSeccion.jsx';
+import TituloSeccion from '../components/atoms/TituloSeccion.jsx';
 
 describe('Componente Atómico TituloSeccion', () => {
     it('debe mostrar el título y el subtítulo correctamente', () => {
