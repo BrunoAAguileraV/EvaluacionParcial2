@@ -4,7 +4,7 @@ const { Header } = Layout;
 
 const BarraNavegacion = () => {
     const elementosMenu = [
-        { key: '1', label: <a href="#quien-soy">Quién Soy</a> },
+        { key: '1', label: <a href="#Datos Personales">Quién Soy</a> },
         { key: '2', label: <a href="#experiencia">Experiencia</a> },
         { key: '3', label: <a href="#estudios">Estudios</a> },
         { key: '4', label: <a href="#proyectos">Proyectos</a> },

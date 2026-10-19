@@ -18,14 +18,14 @@ const App = () => {
   const [cargando, setCargando] = useState(true);
 
   useEffect(() => {
-    // 1. Sección Personal
+    // Datos Personales
     setPerfil({
       nombre: "Bruno Aguilera V.",
       titulo: "Estudiante de Analista Programador",
       ubicacion: "Santiago, Chile",
       descripcion:
           "Estudiante de Analista Programador que combina competencias técnicas en desarrollo de software con una trayectoria en atención al público, logística y soporte operativo. Demostrada capacidad para trabajar bajo presión, resolver problemas en entornos dinámicos y adaptarse rápidamente a nuevas tecnologías y metodologías de trabajo.",
-      avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=BrunoAguilera",
+      avatar: "https://img.magnific.com/vector-premium/icono-perfil-avatar-predeterminado-imagen-usuario-redes-sociales-icono-avatar-gris-silueta-perfil-blanco-ilustracion-vectorial_561158-3408.jpg?semt=ais_hybrid&w=740&q=80",
       habilidadesTecnicas: [
         "Java",
         "Python",
@@ -45,7 +45,7 @@ const App = () => {
       idiomas: ["Español (Nativo)", "Inglés (C1+)"],
     });
 
-    // 2. Experiencia Laboral
+    //Experiencia Laboral
     setExperiencias([
       {
         id: 1,
@@ -73,7 +73,7 @@ const App = () => {
       },
     ]);
 
-    // 3. Estudios
+    // Estudios
     setEstudios([
       {
         id: 1,
@@ -95,31 +95,15 @@ const App = () => {
       },
     ]);
 
-    // 4. Desarrollos y Proyectos
+    // Desarrollos y Proyectos
     setProyectos([
       {
         id: 1,
-        titulo: "Gourmet Hub",
+        titulo: "Frutos Secos Velasquez",
         descripcion:
-            "Aplicación web interactiva construida con React y Vite para la gestión y exploración de recetas gastronómicas.",
-        imagen: "https://picsum.photos/seed/gourmet/400/220",
-        urlGithub: "https://github.com/SyK3Z",
-      },
-      {
-        id: 2,
-        titulo: "Sistema de Gestión de Envíos",
-        descripcion:
-            "Panel administrativo desarrollado con React y Ant Design que implementa operaciones CRUD completas mediante tablas y formularios modales.",
-        imagen: "https://picsum.photos/seed/envios/400/220",
-        urlGithub: "https://github.com/SyK3Z",
-      },
-      {
-        id: 3,
-        titulo: "Control de Stock y Base de Datos SQL",
-        descripcion:
-            "Sistema de gestión de inventario con lógica de control de stock automatizada mediante triggers y procedimientos en SQL.",
-        imagen: "https://picsum.photos/seed/sqlstock/400/220",
-        urlGithub: "https://github.com/SyK3Z",
+            "Sistema de Gestión de Microservicios",
+        imagen: "https://ccnuts.cl/wp-content/uploads/2023/05/20230530_183523.jpg",
+        urlGithub: "https://github.com/BrunoAAguileraV/Proyecto-Frutos-Secos-Velasquez-Aguilera-Vidal-010D.git",
       },
     ]);
 
