@@ -15,20 +15,17 @@ describe('Organismo DatosPersonales (Quién soy)', () => {
     };
 
     it('debe renderizar el nombre del desarrollador y su titulación', () => {
-        // ARRANGE + ACT
+
         render(<DatosPersonales perfil={perfilMock} />);
 
-        // ASSERT
         expect(screen.getByText('Bruno Aguilera V.')).toBeInTheDocument();
         expect(screen.getByText('Estudiante de Analista Programador')).toBeInTheDocument();
         expect(screen.getByText(/Santiago, Chile/i)).toBeInTheDocument();
     });
 
     it('debe mostrar las etiquetas de tecnologías e idiomas', () => {
-        // ARRANGE + ACT
         render(<DatosPersonales perfil={perfilMock} />);
 
-        // ASSERT
         expect(screen.getByText('Java')).toBeInTheDocument();
         expect(screen.getByText('React')).toBeInTheDocument();
         expect(screen.getByText('Inglés (C1+)')).toBeInTheDocument();
