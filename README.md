@@ -35,7 +35,7 @@ src/
 │   │   ├── SeccionContacto.jsx
 │   │   └── PieDePagina.jsx
 │   └── layout/
-│       └── BarraNavegacion.jsx
+│       └── NavBar.jsx
 ├── hooks/
 │   └── useFormularioContacto.js
 ├── App.jsx

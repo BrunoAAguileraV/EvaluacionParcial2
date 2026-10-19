@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Layout, Spin } from 'antd';
-import BarraNavegacion from './components/layout/BarraNavegacion.jsx';
+import NavBar from './components/layout/NavBar.jsx';
 import DatosPersonales from './components/organisms/DatosPersonales.jsx';
 import ExperienciaLaboral from './components/organisms/ExperienciaLaboral.jsx';
 import ListaEstudios from './components/organisms/ListaEstudios.jsx';
@@ -10,7 +10,9 @@ import PieDePagina from './components/organisms/PieDePagina.jsx';
 
 const { Content } = Layout;
 
+//ensamblador
 const App = () => {
+  // almacenar info
   const [perfil, setPerfil] = useState(null);
   const [experiencias, setExperiencias] = useState([]);
   const [estudios, setEstudios] = useState([]);
@@ -18,7 +20,7 @@ const App = () => {
   const [cargando, setCargando] = useState(true);
 
   useEffect(() => {
-    // Datos Personales
+    // datos personales
     setPerfil({
       nombre: "Bruno Aguilera V.",
       titulo: "Estudiante de Analista Programador",
@@ -45,7 +47,7 @@ const App = () => {
       idiomas: ["Español (Nativo)", "Inglés (C1+)"],
     });
 
-    //Experiencia Laboral
+    // experiencia laboral
     setExperiencias([
       {
         id: 1,
@@ -73,7 +75,7 @@ const App = () => {
       },
     ]);
 
-    // Estudios
+    // estudios
     setEstudios([
       {
         id: 1,
@@ -95,7 +97,7 @@ const App = () => {
       },
     ]);
 
-    // Desarrollos y Proyectos
+    //proyectos
     setProyectos([
       {
         id: 1,
@@ -110,6 +112,7 @@ const App = () => {
     setCargando(false);
   }, []);
 
+  //mientras carga se muestra un logo de carga
   if (cargando || !perfil) {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
@@ -120,7 +123,8 @@ const App = () => {
 
   return (
       <Layout style={{ minHeight: '100vh', background: '#f5f5f5' }}>
-        <BarraNavegacion />
+        {/* barra superior */}
+        <NavBar />
         <Content style={{ padding: '0 24px', maxWidth: 1100, margin: '0 auto', width: '100%' }}>
           <DatosPersonales perfil={perfil} />
           <ExperienciaLaboral experiencias={experiencias} />

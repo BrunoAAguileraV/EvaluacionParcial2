@@ -4,10 +4,13 @@ import TituloSeccion from '../atoms/TituloSeccion.jsx';
 
 const { Title, Text, Paragraph } = Typography;
 
+//se muestra la info personal
 const DatosPersonales = ({ perfil }) => {
     return (
+        // id="quien-soy" permite la navegación ancla desde la barra superior
         <section id="quien-soy" style={{ padding: '40px 0' }}>
             <TituloSeccion titulo="¿Quién soy?" subtitulo="Perfil profesional y competencias" />
+            {/* rejilla responsiva */}
             <Row gutter={[32, 32]} align="middle" justify="center">
                 <Col xs={24} md={8} style={{ textAlign: 'center' }}>
                     <Avatar
@@ -33,6 +36,7 @@ const DatosPersonales = ({ perfil }) => {
                         {perfil.descripcion}
                     </Paragraph>
 
+                    {/* habilidades técnicas con etiqueta azul */}
                     <div style={{ marginTop: 16 }}>
                         <Text strong style={{ display: 'block', marginBottom: 8 }}>
                             Lenguajes y Herramientas:

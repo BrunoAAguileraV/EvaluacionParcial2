@@ -3,10 +3,12 @@ import TituloSeccion from '../atoms/TituloSeccion.jsx';
 
 const { Title, Text, Paragraph } = Typography;
 
+//se muestra la experiencia laboral
 const ExperienciaLaboral = ({ experiencias = [] }) => {
     const elementosLineaTiempo = experiencias.map((exp) => ({
         color: '#1677ff',
         content: (
+            //tarjeta que detalla cada experiencia laboral
             <Card size="small" style={{ marginBottom: 16 }}>
                 <Title level={4} style={{ margin: 0 }}>
                     {exp.cargo}
@@ -27,7 +29,8 @@ const ExperienciaLaboral = ({ experiencias = [] }) => {
 
     return (
         <section id="experiencia" style={{ padding: '40px 0' }}>
-            <TituloSeccion titulo="Experiencia Laboral" subtitulo="Trayectoria cronológica" />
+            <TituloSeccion titulo="Experiencia Laboral" subtitulo="Trayectoria" />
+
             <div style={{ maxWidth: 750, margin: '0 auto' }}>
                 <Timeline items={elementosLineaTiempo} />
             </div>

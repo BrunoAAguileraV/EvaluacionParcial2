@@ -6,12 +6,15 @@ import useFormularioContacto from '../../hooks/useFormularioContacto.js';
 
 const { TextArea } = Input;
 
+// redes sociales y formulario de contacto
 const SeccionContacto = () => {
     const { formulario, enviando, manejarEnvio } = useFormularioContacto();
 
     return (
         <section id="contacto" style={{ padding: '40px 0' }}>
+            {/* encabezado general */}
             <TituloSeccion titulo="Contacto" subtitulo="Conecta conmigo o envíame un mensaje" />
+
             <Row gutter={[32, 32]} justify="center">
                 <Col xs={24} md={8} style={{ textAlign: 'center' }}>
                     <Card title="Redes Sociales" bordered={false}>
@@ -33,6 +36,7 @@ const SeccionContacto = () => {
                 <Col xs={24} md={14}>
                     <Card title="Formulario de Contacto" bordered={false}>
                         <Form form={formulario} layout="vertical" onFinish={manejarEnvio}>
+                            {/* textbox con nombre obligatorio */}
                             <Form.Item
                                 name="nombre"
                                 label="Nombre Completo"
@@ -41,6 +45,7 @@ const SeccionContacto = () => {
                                 <Input placeholder="Ej: Juan Pérez" />
                             </Form.Item>
 
+                            {/* campo de correo con validacion */}
                             <Form.Item
                                 name="correo"
                                 label="Correo Electrónico"
@@ -52,6 +57,7 @@ const SeccionContacto = () => {
                                 <Input placeholder="ejemplo@correo.com" />
                             </Form.Item>
 
+                            {/* mensaje */}
                             <Form.Item
                                 name="mensaje"
                                 label="Mensaje"
@@ -60,6 +66,7 @@ const SeccionContacto = () => {
                                 <TextArea rows={4} placeholder="Escribe tu mensaje aquí..." />
                             </Form.Item>
 
+                            {/* boton de envio */}
                             <Form.Item>
                                 <Button
                                     type="primary"

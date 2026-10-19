@@ -3,11 +3,14 @@ import { GithubOutlined } from '@ant-design/icons';
 
 const { Title, Paragraph } = Typography;
 
+//tarjeta que muestra el proyecto
 const TarjetaProyecto = ({ titulo, descripcion, imagen, urlGithub }) => {
     return (
         <Card
             hoverable
+            //imagen de portada
             cover={<img alt={titulo} src={imagen} style={{ height: 180, objectFit: 'cover' }} />}
+            //boton que redirecciona al repositorio
             actions={[
                 <Button
                     type="link"
@@ -22,6 +25,7 @@ const TarjetaProyecto = ({ titulo, descripcion, imagen, urlGithub }) => {
             ]}
         >
             <Title level={4}>{titulo}</Title>
+
             <Paragraph type="secondary" ellipsis={{ rows: 3 }}>
                 {descripcion}
             </Paragraph>
